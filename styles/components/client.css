@@ -1,0 +1,63 @@
+.client-section {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.client-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.client-section p {
+  font-size: 1.1rem;
+  color: #999;
+  margin-bottom: 3rem;
+}
+
+/* The responsive grid */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Individual logo boxes */
+.logo-item {
+  position: relative;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+/* Image styling */
+.logo-item img {
+  max-width: 130px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-item {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

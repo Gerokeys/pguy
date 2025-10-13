@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "PP medium";
+  src: url("/NeueMontreal-Medium.otf")
+}
+
+@font-face {
+  font-family: "PP italic";
+  src: url("/NeueMontreal-Italic.otf")
+}
+
+@font-face {
+  font-family: "PP regular";
+  src: url("/NeueMontreal-Regular.otf")
+}
+
+@font-face {
+  font-family: "PP light";
+  src: url("/NeueMontreal-Light.otf")
+}
+
+@font-face {
+  font-family: "PP Bold";
+  src: url("/NeueMontreal-Bold.otf")
+}
+
+
+:root {
+  --clr-dark: oklch(14.7% 0.004 49.25);
+  --clr-light: oklch(97% 0.001 106.424);
+  --clr-orange600: #f15025;
+  --clr-sky600: oklch(58.8% 0.158 241.966);
+  --clr-orange400: oklch(75% 0.183 55.934);
+  --clr-lightbg: oklch(97.7% 0.013 236.62);
+  --clr-darkbg: oklch(21.6% 0.006 56.043);
+  --clr-Orange: #EE6C29;
+  --clr-Dark: #282b2b;
+  --clr-LightBlue: #7AA6B3;
+
+  /* sizes */
+  --sizes-xxs: 0.5rem;
+  --sizes-xs: 0.75rem;
+  --sizes-sm: 0.875rem;
+  --sizes-base: 1rem;
+  --sizes-lg: 1.125rem;
+  --sizes-xl: 1.25rem;
+  --sizes-2xl: 1.5rem;
+  --sizes-3xl: 1.875rem;
+  --sizes-4xl: 2.25rem;
+  --sizes-5xl: 3rem;
+  --sizes-6xl: 3.75rem;
+  --sizes-7xl: 4.5rem;
+  --sizes-8xl: 6rem;
+  --sizes-9xl: 8rem;
+  --sizes-10xl: 10rem;
+}
+
+
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  color: var(--clr-dark);
+}
+
+img,
+video,
+picture,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+}
+
+strong {
+  color: var(--clr-orange400);
+}

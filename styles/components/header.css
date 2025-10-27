@@ -113,7 +113,7 @@ body {
 @media (min-width: 768px) {
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--clr-lightbg);
     border-radius: 999px;
@@ -186,6 +186,7 @@ body {
   }
 
   .cta .btn {
+    padding: 0.7em 1em;
     font-size: var(--sizes-md);
   }
 }

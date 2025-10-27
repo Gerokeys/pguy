@@ -92,20 +92,18 @@
 }
 
 .right-bottom-image {
-  border-radius: 12px;
+  border-radius: 10px;
   flex: 1;
-  background-color: #3225c2;
   height: 250px;
 }
 
-.right-bottom-text img{
+.right-bottom-text img {
   width: 80px;
   height: 70px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
-
 
 .right-bottom-image img {
   height: 100%;
@@ -226,9 +224,7 @@
   }
 
   .right-bottom-image {
-    border-radius: 12px;
     flex: 1;
-
     height: 100%;
   }
 
@@ -300,7 +296,6 @@
   }
 
   .right-bottom-image {
-    border-radius: 12px;
     flex: 1;
     aspect-ratio: 14/ 16;
     max-width: 300px;

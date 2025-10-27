@@ -1,3 +1,5 @@
+
+
 import "../styles/modern-normalize.css";
 import "../styles/style.css";
 import "../styles/components/header.css";
@@ -6,6 +8,8 @@ import "../styles/components/loader.css";
 import "../styles/components/about-us.css";
 import "../styles/components/footer.css";
 import "../styles/components/client.css";
+import "../styles/components/services.css";
+import "../styles/components/scrolltrigger-animation.css";
 import "../styles/utils.css";
 
 const navSlide = () => {
@@ -167,6 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
     zIndex: 2,
   });
 
+  window.scrollTo(0, 0);
+
   tl.to(".header, .line h1, .line p", {
     y: "0%",
     duration: 1.5,
@@ -199,4 +205,18 @@ document.addEventListener("DOMContentLoaded", () => {
       start: "top 80%",
     },
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lenis = new Lenis();
+
+  lenis.on("scroll", ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+
+  gsap.ticker.lagSmoothing(0);
+
+  const services = gsap.util(".service");
 });

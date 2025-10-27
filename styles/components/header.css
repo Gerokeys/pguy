@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--clr-lightbg);
   border-radius: 999px;
@@ -92,7 +92,7 @@ body {
 @media (min-width: 475px) {
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--clr-lightbg);
     border-radius: 999px;
@@ -113,7 +113,7 @@ body {
 @media (min-width: 768px) {
   .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--clr-lightbg);
     border-radius: 999px;
@@ -186,7 +186,6 @@ body {
   }
 
   .cta .btn {
-    padding: 1em 1.5em;
     font-size: var(--sizes-md);
   }
 }
@@ -195,7 +194,7 @@ body {
 @media (min-width: 1280px) {
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--clr-lightbg);
     border-radius: 999px;

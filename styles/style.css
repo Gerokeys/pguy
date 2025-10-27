@@ -68,7 +68,7 @@ html {
 body {
   font-family: "General Sans", sans-serif;
   color: var(--clr-dark);
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
 }
 
 img,
